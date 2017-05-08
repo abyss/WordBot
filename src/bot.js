@@ -75,9 +75,9 @@ bot.on('message', msg => {
         if (msg.deletable) {
             // FEATURE: If you want to only change nickname for people that don't post the word, uncomment this
             
-            msg.member.setNickname(bot.config.word).catch(() => {
-                return;
-            });
+            // msg.member.setNickname(bot.config.word).catch(() => {
+            //     return;
+            // });
 
             msg.channel.send(bot.config.word);
             msg.delete();
