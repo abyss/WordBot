@@ -4,3 +4,4 @@ node_modules/
 
 # Data files/folders
 data/
+config.json
