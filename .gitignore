@@ -1,7 +1,2 @@
-.DS_Store
-*.log
-node_modules/
-
-# Data files/folders
-data/
-config.json
+node_modules
+.env
