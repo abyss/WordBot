@@ -8,7 +8,7 @@ bot.on('ready', () => {
     console.log(chalk.yellow(`WordBot v${process.env.npm_package_version}`));
     console.log(chalk.green('Bot Ready!'));
 
-    bot.generateInvite(['READ_MESSAGES', 'SEND_MESSAGES', 'MANAGE_MESSAGES', 'MANAGE_NICKNAMES'])
+    bot.generateInvite(['READ_MESSAGE_HISTORY', 'SEND_MESSAGES', 'MANAGE_MESSAGES', 'MANAGE_NICKNAMES'])
         .then((invite_link) => {
             console.log(`Invite Link: ${chalk.blue.underline(invite_link)}`);
         })
